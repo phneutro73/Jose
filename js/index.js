@@ -1,3 +1,4 @@
+console.log('Cargado script...')
 document.addEventListener('DOMContentLoaded', function () {
   var header = document.getElementById('header');
   var hero = document.getElementById('hero');

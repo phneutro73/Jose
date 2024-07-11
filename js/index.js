@@ -1,4 +1,4 @@
-console.log('Cargado script...')
+console.log('Cargado script...');
 document.addEventListener('DOMContentLoaded', function () {
   var header = document.getElementById('header');
   var hero = document.getElementById('hero');
@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
   window.addEventListener('scroll', function () {
     if (window.scrollY > 50) {
       header.classList.add('shrink');
+      console.log('scroll..');
     } else {
       header.classList.remove('shrink');
     }

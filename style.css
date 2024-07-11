@@ -131,7 +131,6 @@ html {
 
 .specialities {
   padding-top: 100px;
-  padding-bottom: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -145,23 +144,66 @@ html {
 }
 
 .single-item {
-  background-color: #333;
-  color: white;
+  background-color: #33333314;
+  color: #1f1f1f;
   margin: 10px;
   padding: 20px;
   flex: 0 1 calc(50% - 20px);
   /* Dos elementos por fila */
   box-sizing: border-box;
   display: flex;
-  justify-content: center;
+  justify-content:flex-start;
   align-items: center;
   flex-direction: column;
+}
+
+.single-item p{
+  font-size: larger;
 }
 
 .img-circle{
   border-radius: 50%;
   width: 200px;
   height: 200px;
+}
+
+.contact {
+  padding-top: 50px;
+  padding-bottom: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.symbols{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #1f1f1f;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24;
+  padding: 10px;
+}
+
+.google-map {
+  position: relative;
+  height: 400px;
+}
+
+.google-map iframe {
+  height: 400px;
+  width: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
 }
 
 @media (max-width: 1400px) {

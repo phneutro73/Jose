@@ -206,6 +206,33 @@ html {
   position: absolute;
 }
 
+.footer{
+  padding-bottom: 30px;
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #D5D5D5;
+  flex-direction: column;
+}
+
+.logo-footer {
+  font-size: xx-large;
+  font-weight: 700;
+  padding-top: 20px;
+
+}
+
+.develop{
+  padding: 0;
+  margin: 0;
+}
+
+.copy{
+  padding: 0;
+  margin: 0;
+}
+
 @media (max-width: 1400px) {
   .header.shrink {
     height: 60px;

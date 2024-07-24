@@ -300,19 +300,14 @@ html {
     display: flex;
   }
 
-  .about{
-    display: block;
-  }
-}
-
-@media (max-width: 650px) {
-  .logo a {
-    font-size: large;
-  }
-
   .about {
     flex-direction: column;
     text-align: center;
+  }
+
+  .separator {
+    display: block;
+    margin: 0 auto 20px auto;
   }
 
   .about-img {
@@ -323,5 +318,11 @@ html {
   .about-text {
     padding: 0;
     width: 100%;
+  }
+}
+
+@media (max-width: 650px) {
+  .logo a {
+    font-size: large;
   }
 }

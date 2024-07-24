@@ -45,11 +45,18 @@ html {
   align-items: center;
   width: 33%;
   font-size: larger;
+  gap: 15px;
 }
 
 .menu-item {
   text-decoration: none;
   color: inherit;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
 }
 
 .hero {
@@ -152,16 +159,16 @@ html {
   /* Dos elementos por fila */
   box-sizing: border-box;
   display: flex;
-  justify-content:flex-start;
+  justify-content: flex-start;
   align-items: center;
   flex-direction: column;
 }
 
-.single-item p{
+.single-item p {
   font-size: larger;
 }
 
-.img-circle{
+.img-circle {
   border-radius: 50%;
   width: 200px;
   height: 200px;
@@ -177,19 +184,26 @@ html {
   width: 100%;
 }
 
-.symbols{
+.contact span {
+  font-size: 20px;
+}
+
+.symbols {
   display: flex;
   justify-content: center;
   align-items: center;
   color: #1f1f1f;
+  padding: 0;
+  margin: 0;
+  height: 25px;
 }
 
 .material-symbols-outlined {
   font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 24;
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24;
   padding: 10px;
 }
 
@@ -206,7 +220,7 @@ html {
   position: absolute;
 }
 
-.footer{
+.footer {
   padding-bottom: 30px;
   background-color: #333;
   display: flex;
@@ -223,14 +237,18 @@ html {
 
 }
 
-.develop{
+.develop {
   padding: 0;
   margin: 0;
 }
 
-.copy{
+.copy {
   padding: 0;
   margin: 0;
+}
+
+.menu-icon.hide {
+  display: none;
 }
 
 @media (max-width: 1400px) {
@@ -249,5 +267,61 @@ html {
     height: 300px;
     /* Ajusta la altura según el nuevo tamaño del header */
     margin-top: 70px;
+  }
+
+  .menu {
+    font-size: 16px;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 940px) {
+  .menu {
+    display: none; 
+    flex-direction: column;
+    text-align: center;
+    background-color: #333;
+    padding-top: 200px;
+    padding-bottom: 20px;
+  }
+
+  .menu a {
+    padding: 10px 0;
+    /* border-top: 1px solid #444; */
+  }
+
+  .menu-icon {
+    display: block;
+    margin-right:100px;
+    
+  }
+
+  .menu.show {
+    display: flex;
+  }
+
+  .about{
+    display: block;
+  }
+}
+
+@media (max-width: 650px) {
+  .logo a {
+    font-size: large;
+  }
+
+  .about {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-img {
+    margin: 0 auto 20px auto;
+    padding-right: 0;
+  }
+
+  .about-text {
+    padding: 0;
+    width: 100%;
   }
 }
